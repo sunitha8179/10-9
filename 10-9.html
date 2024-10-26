@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" onclick="change()">html</button>
+    <button class="btn" onclick="change1()">css</button>
+    <button class="btn" onclick="change2()">js</button>
+    <button class="btn" onclick="change3()">react</button>
+    <script>
+        var b=document.createElement("div");
+        var img=document.createElement("img");
+        img.style.height="400px";
+        img.style.width="600px";
+        img.style.backgroundSize="cover";
+        img.style.backgroundRepeat="no repeat";
+        document.body.appendChild(img);
+        // document.body.appendChild(b);
+        var a=document.getElementById("btn");
+        function change(){
+           
+            b.style.height="400px";
+            b.style.width="600px";
+            b.style.border="2px solid black";
+            img.setAttribute("src","https://content.instructables.com/ORIG/FCB/B741/GXO0U8MU/FCBB741GXO0U8MU.jpg?frame=1")
+        }
+        function change1(){
+            img.setAttribute("src","https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/03090935/Blog-Info-graphics-1000X700-02.jpg")   
+        }
+        function change2(){
+            img.setAttribute("src","https://th.bing.com/th/id/OIP.l6e5XjbspaceR1P5N9EBeQHaES?rs=1&pid=ImgDetMain")
+        }
+        function change3(){
+            img.setAttribute("src","https://th.bing.com/th/id/OIP.mef_2EUrE7m3FgFxJKA9kQHaDt?rs=1&pid=ImgDetMain")
+        }
+    </script>
+</body>
+</html>
